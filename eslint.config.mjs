@@ -13,15 +13,16 @@ const compat = new FlatCompat({
 })
 
 export default [
+  {
+    ignores: ['dist/'],
+  },
   ...compat.extends('eslint:recommended'),
   {
     languageOptions: {
       globals: {
         ...globals.node,
-        ...globals.mocha,
       },
     },
-
     rules: {
       'no-unused-vars': [
         'error',
