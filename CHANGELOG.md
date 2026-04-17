@@ -2,6 +2,17 @@
 
 ### Unreleased
 
+### [1.7.6] - 2026-04-16
+
+#### Changed
+
+- feat: current can be empty, return highest maintenance ver instead
+  - eg: node 25 exited current on 2026-03-31
+    - as of 2026-04-16 node 26 hasn't entered current
+- replace [y,m,d] literals with well named CONSTANTS
+- action.yml: added maintenance, current, and min to declared outputs
+- add limits & validation of nodejs.org download
+
 ### [1.7.5] - 2026-03-24
 
 - action: using node20 -> node24
@@ -144,3 +155,4 @@ deps: bump versions, update dist
 [1.7.3]: https://github.com/msimerson/node-lts-versions/releases/tag/v1.7.3
 [1.7.4]: https://github.com/msimerson/node-lts-versions/releases/tag/v1.7.4
 [1.7.5]: https://github.com/msimerson/node-lts-versions/releases/tag/v1.7.5
+[1.7.6]: https://github.com/msimerson/node-lts-versions/releases/tag/v1.7.6
